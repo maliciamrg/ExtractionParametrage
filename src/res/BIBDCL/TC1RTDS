@@ -1,0 +1,47 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC1RTDS)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC1RTDS))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC1RTDS TABLE
+           ( TYINS                          CHAR(1) NOT NULL,
+             COGARDETSUP                    CHAR(5) NOT NULL,
+             DTEFF                          DATE NOT NULL,
+             TYDETSUP                       CHAR(1) NOT NULL,
+             MTMINFOR                       DECIMAL(11, 0) NOT NULL,
+             MTMAXDETSUP                    DECIMAL(11, 0) NOT NULL,
+             TXMAXDETSUP                    DECIMAL(5, 3) NOT NULL,
+             DLSUPCAL                       DECIMAL(3, 0) NOT NULL,
+             COUNIDEL                       CHAR(1) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC1RTDS                       *
+      ******************************************************************
+       01  DCLTC1RTDS.
+           10 TYINS                PIC X(1).
+           10 COGARDETSUP          PIC X(5).
+           10 DTEFF                PIC X(10).
+           10 TYDETSUP             PIC X(1).
+           10 MTMINFOR             PIC S9(11)V USAGE COMP-3.
+           10 MTMAXDETSUP          PIC S9(11)V USAGE COMP-3.
+           10 TXMAXDETSUP          PIC S9(2)V9(3) USAGE COMP-3.
+           10 DLSUPCAL             PIC S9(3)V USAGE COMP-3.
+           10 COUNIDEL             PIC X(1).
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 15      *
+      ******************************************************************

@@ -1,0 +1,51 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC0DCAD)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC0DCAD))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC0DCAD TABLE
+           ( CONATFLU                       CHAR(4) NOT NULL,
+             TYFLU                          CHAR(4) NOT NULL,
+             COANOFLU                       CHAR(2) NOT NULL,
+             COETADECINI                    CHAR(1) NOT NULL,
+             TYFLUCOM                       CHAR(1) NOT NULL,
+             COETAFLU                       CHAR(1) NOT NULL,
+             COETADECFIN                    CHAR(1) NOT NULL,
+             TYREC                          CHAR(3) NOT NULL,
+             TYTACCOR                       CHAR(8) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL,
+             LBCOM                          VARCHAR(300) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC0DCAD                       *
+      ******************************************************************
+       01  DCLTC0DCAD.
+           10 CONATFLU             PIC X(4).
+           10 TYFLU                PIC X(4).
+           10 COANOFLU             PIC X(2).
+           10 COETADECINI          PIC X(1).
+           10 TYFLUCOM             PIC X(1).
+           10 COETAFLU             PIC X(1).
+           10 COETADECFIN          PIC X(1).
+           10 TYREC                PIC X(3).
+           10 TYTACCOR             PIC X(8).
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+           10 LBCOM.
+              49 LBCOM-LEN         PIC S9(4) USAGE COMP.
+              49 LBCOM-TEXT        PIC X(300).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 16      *
+      ******************************************************************

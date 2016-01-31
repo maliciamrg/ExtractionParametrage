@@ -1,0 +1,50 @@
+LOAD DATA INDDN SYSREC   LOG NO  RESUME YES
+ EBCDIC  CCSID(01147,00000,00000)
+ FORMAT DELIMITED COLDEL  X'5E'  CHARDEL X'7F'  DECPT   X'4B'
+ INTO TABLE
+ "G2P1".
+ "TC1REGT"
+ NUMRECS                  583
+ ( "IDDETEVTTEC"
+  POSITION(*)             CHAR(00008)
+ , "TYPER"
+  POSITION(*)             CHAR(00001)
+ , "TYLIGCRE"
+  POSITION(*)             CHAR(00001)
+ , "COMODCALEST"
+  POSITION(*)             CHAR(00001)
+ , "COCTX"
+  POSITION(*)             CHAR(00001)
+ , "COMODCALCRE"
+  POSITION(*)             CHAR(00001)
+ , "TYAPPCOT"
+  POSITION(*)             CHAR(00001)
+ , "COTRITAB"
+  POSITION(*)             CHAR(00003)
+ , "COORIFSC"
+  POSITION(*)             CHAR(00001)
+ , "COOBJ"
+  POSITION(*)             CHAR(00002)
+ , "CORGPCODINS"
+  POSITION(*)             CHAR(00004)
+ , "COFAMEVTGES"
+  POSITION(*)             CHAR(00005)
+ , "COEVTGES"
+  POSITION(*)             CHAR(00007)
+ , "INTRTCRE"
+  POSITION(*)             CHAR(00001)
+ , "TYPIEJUS"
+  POSITION(*)             CHAR(00003)
+ , "TSCRE"
+  POSITION(*)             TIMESTAMP EXTERNAL(026)
+ , "TSMAJ"
+  POSITION(*)             TIMESTAMP EXTERNAL(026)
+ , "IDUTICRE"
+  POSITION(*)             CHAR(00020)
+ , "IDUTIMAJ"
+  POSITION(*)             CHAR(00020)
+ , "IDPGMCRE"
+  POSITION(*)             CHAR(00008)
+ , "IDPGMMAJ"
+  POSITION(*)             CHAR(00008)
+ )

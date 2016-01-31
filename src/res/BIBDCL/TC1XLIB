@@ -1,0 +1,47 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC1XLIB)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC1XLIB))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC1XLIB TABLE
+           ( IDCOL                          CHAR(11) NOT NULL,
+             COCOL                          CHAR(11) NOT NULL,
+             LBCOD02C                       CHAR(2) NOT NULL,
+             LBCOD03C                       CHAR(3) NOT NULL,
+             LBCOD05C                       CHAR(5) NOT NULL,
+             LBCOD10C                       CHAR(10) NOT NULL,
+             LBCOD20C                       CHAR(20) NOT NULL,
+             LBCOD80C                       CHAR(80) NOT NULL,
+             NOORDAFF                       DECIMAL(2, 0) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC1XLIB                       *
+      ******************************************************************
+       01  DCLTC1XLIB.
+           10 IDCOL                PIC X(11).
+           10 COCOL                PIC X(11).
+           10 LBCOD02C             PIC X(2).
+           10 LBCOD03C             PIC X(3).
+           10 LBCOD05C             PIC X(5).
+           10 LBCOD10C             PIC X(10).
+           10 LBCOD20C             PIC X(20).
+           10 LBCOD80C             PIC X(80).
+           10 NOORDAFF             PIC S9(2)V USAGE COMP-3.
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 15      *
+      ******************************************************************

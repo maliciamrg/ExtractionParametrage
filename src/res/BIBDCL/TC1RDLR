@@ -1,0 +1,39 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC1RDLR)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC1RDLR))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC1RDLR TABLE
+           ( TYDOCRET                       CHAR(3) NOT NULL,
+             TYSUPDOC                       CHAR(1) NOT NULL,
+             DTDEBPERTRA                    CHAR(4) NOT NULL,
+             DTFINPERTRA                    CHAR(4) NOT NULL,
+             DTLIMRET                       CHAR(4) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC1RDLR                       *
+      ******************************************************************
+       01  DCLTC1RDLR.
+           10 TYDOCRET             PIC X(3).
+           10 TYSUPDOC             PIC X(1).
+           10 DTDEBPERTRA          PIC X(4).
+           10 DTFINPERTRA          PIC X(4).
+           10 DTLIMRET             PIC X(4).
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 11      *
+      ******************************************************************

@@ -1,0 +1,51 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC0RCOF)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC0RCOF))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC0RCOF TABLE
+           ( IDCOHFIN                       CHAR(9) NOT NULL,
+             COTRITAB                       CHAR(3) NOT NULL,
+             COORI                          CHAR(1) NOT NULL,
+             COOBJ                          CHAR(2) NOT NULL,
+             TYLIGCRE                       CHAR(1) NOT NULL,
+             COMODCRE                       CHAR(1) NOT NULL,
+             NOORDTEC                       SMALLINT NOT NULL,
+             COSEN                          CHAR(1) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL,
+             INANNMVTFIN                    CHAR(1) NOT NULL,
+             LBMVTFIN                       VARCHAR(300) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC0RCOF                       *
+      ******************************************************************
+       01  DCLTC0RCOF.
+           10 IDCOHFIN             PIC X(9).
+           10 COTRITAB             PIC X(3).
+           10 COORI                PIC X(1).
+           10 COOBJ                PIC X(2).
+           10 TYLIGCRE             PIC X(1).
+           10 COMODCRE             PIC X(1).
+           10 NOORDTEC             PIC S9(4) USAGE COMP.
+           10 COSEN                PIC X(1).
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+           10 INANNMVTFIN          PIC X(1).
+           10 LBMVTFIN.
+              49 LBMVTFIN-LEN      PIC S9(4) USAGE COMP.
+              49 LBMVTFIN-TEXT     PIC X(300).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 16      *
+      ******************************************************************

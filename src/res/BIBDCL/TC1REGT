@@ -1,0 +1,59 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC1REGT)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC1REGT))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC1REGT TABLE
+           ( IDDETEVTTEC                    CHAR(8) NOT NULL,
+             TYPER                          CHAR(1) NOT NULL,
+             TYLIGCRE                       CHAR(1) NOT NULL,
+             COMODCALEST                    CHAR(1) NOT NULL,
+             COCTX                          CHAR(1) NOT NULL,
+             COMODCALCRE                    CHAR(1) NOT NULL,
+             TYAPPCOT                       CHAR(1) NOT NULL,
+             COTRITAB                       CHAR(3) NOT NULL,
+             COORIFSC                       CHAR(1) NOT NULL,
+             COOBJ                          CHAR(2) NOT NULL,
+             CORGPCODINS                    CHAR(4) NOT NULL,
+             COFAMEVTGES                    CHAR(5) NOT NULL,
+             COEVTGES                       CHAR(7) NOT NULL,
+             INTRTCRE                       CHAR(1) NOT NULL,
+             TYPIEJUS                       CHAR(3) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC1REGT                       *
+      ******************************************************************
+       01  DCLTC1REGT.
+           10 IDDETEVTTEC          PIC X(8).
+           10 TYPER                PIC X(1).
+           10 TYLIGCRE             PIC X(1).
+           10 COMODCALEST          PIC X(1).
+           10 COCTX                PIC X(1).
+           10 COMODCALCRE          PIC X(1).
+           10 TYAPPCOT             PIC X(1).
+           10 COTRITAB             PIC X(3).
+           10 COORIFSC             PIC X(1).
+           10 COOBJ                PIC X(2).
+           10 CORGPCODINS          PIC X(4).
+           10 COFAMEVTGES          PIC X(5).
+           10 COEVTGES             PIC X(7).
+           10 INTRTCRE             PIC X(1).
+           10 TYPIEJUS             PIC X(3).
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 21      *
+      ******************************************************************

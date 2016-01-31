@@ -1,0 +1,44 @@
+LOAD DATA INDDN SYSREC   LOG NO  RESUME YES
+ EBCDIC  CCSID(01147,00000,00000)
+ FORMAT DELIMITED COLDEL  X'5E'  CHARDEL X'7F'  DECPT   X'4B'
+ INTO TABLE
+ "G2P1".
+ "TC1RADO"
+ NUMRECS                  183
+ ( "TYDOCRET"
+  POSITION(*)             CHAR(00003)
+ , "COETADOC"
+  POSITION(*)             CHAR(00001)
+ , "COMVTNPA"
+  POSITION(*)             CHAR(00001)
+ , "INVISDETPAI"
+  POSITION(*)             CHAR(00001)
+ , "COECRDETDOC"
+  POSITION(*)             CHAR(00002)
+ , "INACTEXP"
+  POSITION(*)             CHAR(00001)
+ , "INACTREE"
+  POSITION(*)             CHAR(00001)
+ , "INACTMARNPA"
+  POSITION(*)             CHAR(00001)
+ , "INACTSAI"
+  POSITION(*)             CHAR(00001)
+ , "INACTMOD"
+  POSITION(*)             CHAR(00001)
+ , "INACTENR"
+  POSITION(*)             CHAR(00001)
+ , "TSCRE"
+  POSITION(*)             TIMESTAMP EXTERNAL(026)
+ , "TSMAJ"
+  POSITION(*)             TIMESTAMP EXTERNAL(026)
+ , "IDUTICRE"
+  POSITION(*)             CHAR(00020)
+ , "IDUTIMAJ"
+  POSITION(*)             CHAR(00020)
+ , "IDPGMCRE"
+  POSITION(*)             CHAR(00008)
+ , "IDPGMMAJ"
+  POSITION(*)             CHAR(00008)
+ , "INACTANN"
+  POSITION(*)             CHAR(00001)
+ )

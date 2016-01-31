@@ -1,0 +1,52 @@
+LOAD DATA INDDN SYSREC   LOG NO  RESUME YES
+ EBCDIC  CCSID(01147,00000,00000)
+ FORMAT DELIMITED COLDEL  X'5E'  CHARDEL X'7F'  DECPT   X'4B'
+ INTO TABLE
+ "G2P1".
+ "TC0RDEA"
+ NUMRECS                 1328
+ ( "COCONINICAL"
+  POSITION(*)             CHAR(00003)
+ , "TYACTREC"
+  POSITION(*)             CHAR(00004)
+ , "INDECATT"
+  POSITION(*)             CHAR(00001)
+ , "INRELDOC"
+  POSITION(*)             CHAR(00001)
+ , "INACTPREREA"
+  POSITION(*)             CHAR(00001)
+ , "INIPLANO"
+  POSITION(*)             CHAR(00001)
+ , "INSOLSIG"
+  POSITION(*)             CHAR(00001)
+ , "INSENUEC"
+  POSITION(*)             CHAR(00001)
+ , "INPREPAI"
+  POSITION(*)             CHAR(00001)
+ , "INPRIIPL"
+  POSITION(*)             CHAR(00001)
+ , "COETAINI"
+  POSITION(*)             CHAR(00001)
+ , "TYACTCIB"
+  POSITION(*)             CHAR(00002)
+ , "LBACTCIB"
+  POSITION(*)             CHAR(00020)
+ , "TYDOCCIB"
+  POSITION(*)             CHAR(00003)
+ , "COETAACTCIB"
+  POSITION(*)             CHAR(00001)
+ , "LBETAACTCIB"
+  POSITION(*)             CHAR(00050)
+ , "TSCRE"
+  POSITION(*)             TIMESTAMP EXTERNAL(026)
+ , "TSMAJ"
+  POSITION(*)             TIMESTAMP EXTERNAL(026)
+ , "IDUTICRE"
+  POSITION(*)             CHAR(00020)
+ , "IDUTIMAJ"
+  POSITION(*)             CHAR(00020)
+ , "IDPGMCRE"
+  POSITION(*)             CHAR(00008)
+ , "IDPGMMAJ"
+  POSITION(*)             CHAR(00008)
+ )

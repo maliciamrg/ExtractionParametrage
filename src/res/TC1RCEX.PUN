@@ -1,0 +1,18 @@
+   (
+   COETAGES                               POSITION(       1         )
+   CHAR(                      6) ,
+   COCANEXT                               POSITION(       7         )
+   CHAR(                      3) ,
+   TSCRE                                  POSITION(      10         )
+   TIMESTAMP EXTERNAL(       26) ,
+   TSMAJ                                  POSITION(      36         )
+   TIMESTAMP EXTERNAL(       26) ,
+   IDUTICRE                               POSITION(      62         )
+   CHAR(                     20) ,
+   IDUTIMAJ                               POSITION(      82         )
+   CHAR(                     20) ,
+   IDPGMCRE                               POSITION(     102         )
+   CHAR(                      8) ,
+   IDPGMMAJ                               POSITION(     110         )
+   CHAR(                      8)
+   )

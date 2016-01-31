@@ -1,0 +1,53 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC1RADO)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC1RADO))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC1RADO TABLE
+           ( TYDOCRET                       CHAR(3) NOT NULL,
+             COETADOC                       CHAR(1) NOT NULL,
+             COMVTNPA                       CHAR(1) NOT NULL,
+             INVISDETPAI                    CHAR(1) NOT NULL,
+             COECRDETDOC                    CHAR(2) NOT NULL,
+             INACTEXP                       CHAR(1) NOT NULL,
+             INACTREE                       CHAR(1) NOT NULL,
+             INACTMARNPA                    CHAR(1) NOT NULL,
+             INACTSAI                       CHAR(1) NOT NULL,
+             INACTMOD                       CHAR(1) NOT NULL,
+             INACTENR                       CHAR(1) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL,
+             INACTANN                       CHAR(1) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC1RADO                       *
+      ******************************************************************
+       01  DCLTC1RADO.
+           10 TYDOCRET             PIC X(3).
+           10 COETADOC             PIC X(1).
+           10 COMVTNPA             PIC X(1).
+           10 INVISDETPAI          PIC X(1).
+           10 COECRDETDOC          PIC X(2).
+           10 INACTEXP             PIC X(1).
+           10 INACTREE             PIC X(1).
+           10 INACTMARNPA          PIC X(1).
+           10 INACTSAI             PIC X(1).
+           10 INACTMOD             PIC X(1).
+           10 INACTENR             PIC X(1).
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+           10 INACTANN             PIC X(1).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 18      *
+      ******************************************************************

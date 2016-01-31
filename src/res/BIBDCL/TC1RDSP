@@ -1,0 +1,41 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC1RDSP)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC1RDSP))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC1RDSP TABLE
+           ( TYINS                          CHAR(1) NOT NULL,
+             COGARDETSUP                    CHAR(5) NOT NULL,
+             DTEFF                          DATE NOT NULL,
+             COGAR                          CHAR(5) NOT NULL,
+             TXDETSUP                       DECIMAL(5, 3) NOT NULL,
+             TXMAJPEN                       DECIMAL(5, 3) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC1RDSP                       *
+      ******************************************************************
+       01  DCLTC1RDSP.
+           10 TYINS                PIC X(1).
+           10 COGARDETSUP          PIC X(5).
+           10 DTEFF                PIC X(10).
+           10 COGAR                PIC X(5).
+           10 TXDETSUP             PIC S9(2)V9(3) USAGE COMP-3.
+           10 TXMAJPEN             PIC S9(2)V9(3) USAGE COMP-3.
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 12      *
+      ******************************************************************

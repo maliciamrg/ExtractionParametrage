@@ -1,0 +1,61 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC0RDEA)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC0RDEA))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC0RDEA TABLE
+           ( COCONINICAL                    CHAR(3) NOT NULL,
+             TYACTREC                       CHAR(4) NOT NULL,
+             INDECATT                       CHAR(1) NOT NULL,
+             INRELDOC                       CHAR(1) NOT NULL,
+             INACTPREREA                    CHAR(1) NOT NULL,
+             INIPLANO                       CHAR(1) NOT NULL,
+             INSOLSIG                       CHAR(1) NOT NULL,
+             INSENUEC                       CHAR(1) NOT NULL,
+             INPREPAI                       CHAR(1) NOT NULL,
+             INPRIIPL                       CHAR(1) NOT NULL,
+             COETAINI                       CHAR(1) NOT NULL,
+             TYACTCIB                       CHAR(2) NOT NULL,
+             LBACTCIB                       CHAR(20) NOT NULL,
+             TYDOCCIB                       CHAR(3) NOT NULL,
+             COETAACTCIB                    CHAR(1) NOT NULL,
+             LBETAACTCIB                    CHAR(50) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC0RDEA                       *
+      ******************************************************************
+       01  DCLTC0RDEA.
+           10 COCONINICAL          PIC X(3).
+           10 TYACTREC             PIC X(4).
+           10 INDECATT             PIC X(1).
+           10 INRELDOC             PIC X(1).
+           10 INACTPREREA          PIC X(1).
+           10 INIPLANO             PIC X(1).
+           10 INSOLSIG             PIC X(1).
+           10 INSENUEC             PIC X(1).
+           10 INPREPAI             PIC X(1).
+           10 INPRIIPL             PIC X(1).
+           10 COETAINI             PIC X(1).
+           10 TYACTCIB             PIC X(2).
+           10 LBACTCIB             PIC X(20).
+           10 TYDOCCIB             PIC X(3).
+           10 COETAACTCIB          PIC X(1).
+           10 LBETAACTCIB          PIC X(50).
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 22      *
+      ******************************************************************

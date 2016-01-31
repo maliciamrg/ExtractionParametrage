@@ -1,0 +1,41 @@
+      ******************************************************************
+      * DCLGEN TABLE(G2P1.TC0RCIC)                                     *
+      *        LIBRARY(UD10742.WORKCSV.VLUDOCSV.BIBDCL(TC0RCIC))       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE G2P1.TC0RCIC TABLE
+           ( TYCRE                          CHAR(8) NOT NULL,
+             NOSEQCON                       CHAR(2) NOT NULL,
+             COCON                          CHAR(3) NOT NULL,
+             COREP                          CHAR(1) NOT NULL,
+             TSCRE                          TIMESTAMP NOT NULL,
+             TSMAJ                          TIMESTAMP NOT NULL,
+             IDUTICRE                       CHAR(20) NOT NULL,
+             IDUTIMAJ                       CHAR(20) NOT NULL,
+             IDPGMCRE                       CHAR(8) NOT NULL,
+             IDPGMMAJ                       CHAR(8) NOT NULL,
+             LBMSG                          VARCHAR(200) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE G2P1.TC0RCIC                       *
+      ******************************************************************
+       01  DCLTC0RCIC.
+           10 TYCRE                PIC X(8).
+           10 NOSEQCON             PIC X(2).
+           10 COCON                PIC X(3).
+           10 COREP                PIC X(1).
+           10 TSCRE                PIC X(26).
+           10 TSMAJ                PIC X(26).
+           10 IDUTICRE             PIC X(20).
+           10 IDUTIMAJ             PIC X(20).
+           10 IDPGMCRE             PIC X(8).
+           10 IDPGMMAJ             PIC X(8).
+           10 LBMSG.
+              49 LBMSG-LEN         PIC S9(4) USAGE COMP.
+              49 LBMSG-TEXT        PIC X(200).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 11      *
+      ******************************************************************
